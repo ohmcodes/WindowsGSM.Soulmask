@@ -1,5 +1,5 @@
-# WindowsGSMPluginTemplate
-🧩WindowsGSM plugin that provides PluginTemplate Dedicated server
+# WindowsGSM.Soulmask
+🧩WindowsGSM plugin that provides Soulmask Dedicated server
 
 
 # WindowsGSM Installation: 
@@ -8,24 +8,24 @@
 4. Drag WindowsGSM.exe into previously created folder and execute it.
 
 # Plugin Installation:
-1. Download [latest](https://github.com/ohmcodes/WindowsGSM.PluginTemplate/releases/latest) release
-2. Extract then Move **PluginTemplate.cs** folder to **plugins** folder
+1. Download [latest](https://github.com/ohmcodes/WindowsGSM.Soulmask/releases/latest) release
+2. Extract then Move **Soulmask.cs** folder to **plugins** folder
 3. OR Press on the Puzzle Icon in the left bottom side and install this plugin by navigating to it and select the Zip File.
 4. Click **[RELOAD PLUGINS]** button or restart WindowsGSM
-5. Navigate "Servers" and Click "Install Game Server" and find "PluginTemplate Dedicated Server [PluginTemplate.cs]
+5. Navigate "Servers" and Click "Install Game Server" and find "Soulmask Dedicated Server [Soulmask.cs]
 
 ### Official Documentation
-🗃️ https://TheGame.fandom.com/wiki/Dedicated_servers
+🗃️ TBD
 
 ### Unofficial Documentation
-🗃️ https://www.domain.com/blog/TheGame-dedicated-server/
+🗃️ https://soulmask.fandom.com/wiki/Private_Server
 
 ### The Game
-🕹️ https://store.steampowered.com/app/420/TheGame/
+🕹️ https://store.steampowered.com/app/2646460/Soulmask/
 
 ### Dedicated server info
-🖥️ https://steamdb.info/app/420/info/
+🖥️ https://steamdb.info/app/2886870/info/
 
 
 # License
-This project is licensed under the MIT License - see the <a href="https://github.com/ohmcodes/WindowsGSM.PluginTemplate/blob/main/LICENSE">LICENSE.md</a> file for details
+This project is licensed under the MIT License - see the <a href="https://github.com/ohmcodes/WindowsGSM.Soulmask/blob/main/LICENSE">LICENSE.md</a> file for details
