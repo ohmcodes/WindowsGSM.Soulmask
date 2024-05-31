@@ -9,44 +9,44 @@ using WindowsGSM.GameServer.Engine;
 using WindowsGSM.GameServer.Query;
 using System.Collections.Generic;
 
-namespace WindowsGSM.Plugins
+namespace WindowsGSM.Soulmask
 {
-    public class PluginTemplate : SteamCMDAgent
+    public class Soulmask : SteamCMDAgent
     {
         // - Plugin Details
         public Plugin Plugin = new Plugin
         {
-            name = "WindowsGSM.PluginTemplate", // WindowsGSM.XXXX
+            name = "WindowsGSM.Soulmask", // WindowsGSM.XXXX
             author = "ohmcodes",
-            description = "WindowsGSM plugin for supporting PluginTemplate Dedicated Server",
+            description = "WindowsGSM plugin for supporting Soulmask Dedicated Server",
             version = "1.0",
-            url = "https://github.com/ohmcodes/WindowsGSM.PluginTemplate", // Github repository link (Best practice)
+            url = "https://github.com/ohmcodes/WindowsGSM.Soulmask", // Github repository link (Best practice)
             color = "#1E8449" // Color Hex
         };
 
         // - Standard Constructor and properties
-        public PluginTemplate(ServerConfig serverData) : base(serverData) => base.serverData = _serverData = serverData;
+        public Soulmask(ServerConfig serverData) : base(serverData) => base.serverData = _serverData = serverData;
         private readonly ServerConfig _serverData;
         public string Error, Notice;
 
         // - Settings properties for SteamCMD installer
         public override bool loginAnonymous => false;
-        public override string AppId => "420"; /* taken via https://steamdb.info/app/420/info/ */
+        public override string AppId => "3017310"; /* taken via https://steamdb.info/app/3017310/info/ */
 
         // - Game server Fixed variables
-        public override string StartPath => "executable.exe"; // Game server start path
-        public string FullName = "PluginTemplate Dedicated Server"; // Game server FullName
+        public override string StartPath => "WSServer.exe"; // Game server start path
+        public string FullName = "Soulmask Dedicated Server"; // Game server FullName
         public bool AllowsEmbedConsole = true;  // Does this server support output redirect?
         public int PortIncrements = 0; // This tells WindowsGSM how many ports should skip after installation
         public object QueryMethod = new A2S(); // Query method should be use on current server type. Accepted value: null or new A2S() or new FIVEM() or new UT3()
 
         // - Game server default values
-        public string ServerName = "PluginTemplate";
-        public string Defaultmap = ""; // Original (MapName)
+        public string ServerName = "Soulmask";
+        public string Defaultmap = "Level01_Main"; // Original (MapName)
         public string Maxplayers = "10"; // WGSM reads this as string but originally it is number or int (MaxPlayers)
-        public string Port = "27015"; // WGSM reads this as string but originally it is number or int
-        public string QueryPort = "27016"; // WGSM reads this as string but originally it is number or int (SteamQueryPort)
-        public string Additional = string.Empty;
+        public string Port = "7777"; // WGSM reads this as string but originally it is number or int
+        public string QueryPort = "27015"; // WGSM reads this as string but originally it is number or int (SteamQueryPort)
+        public string Additional = "-UTF8Output -forcepassthrough -server %* -log -EchoPort=18888";
 
 
         private Dictionary<string, string> configData = new Dictionary<string, string>();
@@ -68,7 +68,10 @@ namespace WindowsGSM.Plugins
                 return null;
             }
 
-            string param = string.Empty;
+            string param = "";
+
+            param += $" -MULTIHOME={_serverData.ServerIP} ";
+            param += $" {_serverData.ServerParam}";
 
             // Prepare Process
             var p = new Process
