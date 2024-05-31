@@ -9,7 +9,7 @@ using WindowsGSM.GameServer.Engine;
 using WindowsGSM.GameServer.Query;
 using System.Collections.Generic;
 
-namespace WindowsGSM.Soulmask
+namespace WindowsGSM.Plugin
 {
     public class Soulmask : SteamCMDAgent
     {
