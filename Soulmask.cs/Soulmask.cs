@@ -72,7 +72,7 @@ namespace WindowsGSM.Plugins
 
 
             param += $" -MULTIHOME={_serverData.ServerIP} ";
-            param += $" -SteamServerName={_serverData.ServerName} ";
+            param += $" -SteamServerName=\"\"\"{_serverData.ServerName}\"\"\" ";
             param += $" -MaxPlayers={_serverData.ServerMaxPlayer} ";
             param += $" -Port={_serverData.ServerPort} ";
             param += $" -QueryPort={_serverData.ServerQueryPort} ";
