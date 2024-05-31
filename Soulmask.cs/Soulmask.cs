@@ -34,10 +34,10 @@ namespace WindowsGSM.Plugins
         public override string AppId => "3017310"; /* taken via https://steamdb.info/app/3017310/info/ */
 
         // - Game server Fixed variables
-        public override string StartPath => "WSServer.exe"; // Game server start path
+        public override string StartPath => @"WS\Binaries\Win64\WSServer-Win64-Shipping.exe"; // Game server start path
         public string FullName = "Soulmask Dedicated Server"; // Game server FullName
         public bool AllowsEmbedConsole = true;  // Does this server support output redirect?
-        public int PortIncrements = 0; // This tells WindowsGSM how many ports should skip after installation
+        public int PortIncrements = 1; // This tells WindowsGSM how many ports should skip after installation
         public object QueryMethod = new A2S(); // Query method should be use on current server type. Accepted value: null or new A2S() or new FIVEM() or new UT3()
 
         // - Game server default values
