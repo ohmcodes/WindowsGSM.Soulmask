@@ -30,7 +30,7 @@ namespace WindowsGSM.Soulmask
         public string Error, Notice;
 
         // - Settings properties for SteamCMD installer
-        public override bool loginAnonymous => false;
+        public override bool loginAnonymous => true;
         public override string AppId => "3017310"; /* taken via https://steamdb.info/app/3017310/info/ */
 
         // - Game server Fixed variables
