@@ -68,7 +68,7 @@ namespace WindowsGSM.Plugins
                 return null;
             }
 
-            string param = "";
+            string param = $"{_serverData.ServerMap}";
 
 
             param += $" -MULTIHOME={_serverData.ServerIP} ";
