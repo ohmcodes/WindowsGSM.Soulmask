@@ -22,6 +22,15 @@ PLEASE ⭐STAR⭐ THE REPO IF YOU LIKE IT! THANKS!
 4. Windows servers only 
 (downloading .net frame 3.5 from the inter web will not work you must use admin control panel)
 https://www.youtube.com/watch?v=uSRMvCjuUdI
+5. Copy list of file below on `WS\Binaries\Win64` from root directory and start the server
+```
+steamclient.dll
+steamclient64.dll
+tier0_s.dll
+tier0_s64.dll
+vstdlib_s.dll
+vstdlib.s64.dll
+```
 
 ### Official Documentation
 🗃️ TBD
