@@ -15,7 +15,10 @@ PLEASE ⭐STAR⭐ THE REPO IF YOU LIKE IT! THANKS!
 4. Click **[RELOAD PLUGINS]** button or restart WindowsGSM
 5. Navigate "Servers" and Click "Install Game Server" and find "Soulmask Dedicated Server [Soulmask.cs]
 
-### INSTALL STEAM LAUNCHER
+### INSTALL
+1. Better if you have Steam Launcher to your server
+2. Install all in _CommonRedist
+3. DirectX and vcredist
 
 ### Official Documentation
 🗃️ TBD
