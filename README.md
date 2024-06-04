@@ -19,6 +19,9 @@ PLEASE ⭐STAR⭐ THE REPO IF YOU LIKE IT! THANKS!
 1. Better if you have Steam Launcher to your server
 2. Install all in _CommonRedist
 3. DirectX and vcredist
+4. Windows servers only 
+(downloading .net frame 3.5 from the inter web will not work you must use admin control panel)
+https://www.youtube.com/watch?v=uSRMvCjuUdI
 
 ### Official Documentation
 🗃️ TBD
