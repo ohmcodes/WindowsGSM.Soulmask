@@ -130,8 +130,8 @@ namespace WindowsGSM.Plugins
             await Task.Run(() =>
             {
                 Functions.ServerConsole.SetMainWindow(p.MainWindowHandle);
-                Functions.ServerConsole.SendWaitToMainWindow("quit 10");
-                Task.Delay(11000);
+                Functions.ServerConsole.SendWaitToMainWindow("quit 5");
+                Task.Delay(5000);
                 Functions.ServerConsole.SendWaitToMainWindow("^c");
             });
             await Task.Delay(2000);
